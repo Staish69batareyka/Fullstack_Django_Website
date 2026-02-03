@@ -5,5 +5,17 @@ Main page
 {% endblock %}
 
 {% block content %}
-<h1>Main</h1>
+<form action="" class="form-enter">
+    <h1>Авторизация</h1>
+    <div class="form-group">
+        <label for="authorization_name">Name</label>
+        <input type="text" id="authorization_name" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label for="authorization_email">Email</label>
+        <input type="email" id="authorization_email" class="form-control"/>
+        <small class="form-text text-muted">Формат вводных данных не похож на email :р</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 {% endblock %}
