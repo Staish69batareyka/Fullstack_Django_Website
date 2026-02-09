@@ -1,9 +1,34 @@
 {% extends 'main/layout.html' %}
 {% load static %}
 
-{% block title %}Hello{% endblock title %}
+{% block title %}Home{% endblock title %}
 
 
 {% block content %}
-<h1>Hello</h1>
+    <section class="home d-flex flex-column">
+        <div class="home-title"><a href="#" class="home-btn mt-4">ALL PRODUCTS</a></div>
+        <div class="home-recommendation">
+            <div class="rec-title">
+                <h3><span>Popular Accessories</span></h3>
+            </div>
+        </div>
+        <div class="home-cards">
+            {% for product in products %}
+            <a href="{{ product.get_absolute_url }}" class="home-card">
+                <img src="{{ product.image.url }}" class="card-img" alt="product-image">
+                <h5 class="card-name">{{ product.name }}</h5>
+                {% if product.discount%}
+                    <div class="card-discount">
+                        <p class="line">{{ product.price }}</p>
+                        <p>{{ product.sell_price }}</p>
+                    </div>
+                {% else %}
+                    <p class="line">{{ product.price }}</p>
+                {% endif %}
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    <img src="{% static 'img/logogot.png'%}" class="logogothic" alt="logo-gothic">
+    <img src="{% static 'img/subtitlee.png'%}" class="subtitlee" alt="subtitle">
 {% endblock content %}

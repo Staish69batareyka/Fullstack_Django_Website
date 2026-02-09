@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock title %}</title>
 
-    <link rel="stylesheet" href="{% static 'main/static/bootstrap/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css'%}">
     <link rel="stylesheet" href="{% static 'main/static/css/base.css' %}">
 </head>
 <body>
@@ -20,15 +20,24 @@
                 </ul>
             </navbar>
             <div class="header-logo">
-                <a href="/"><img src="{% static 'img' %}" alt="logo"></a>
+                <a href="/"><img src="{% static 'img/qwewqe.png' %}" alt="heavy-logo"></a>
+            </div>
+            <div class="header-profile">
+                <a href="/" class="m-3">LOGIN</a>
             </div>
         </div>
     </header>
 
+    <div class="container">
+        {% block content %}
+        {% endblock content %}
+    </div>
 
-    {% block content %}
-    {% endblock content %}
+    <img src="{% static 'img/frame1.png' %}" class="frame1" alt="frame1">
+    <img src="{% static 'img/frame2.png' %}" class="frame2" alt="frame2">
+    <img src="{% static 'img/frame3.png' %}" class="frame3" alt="frame3">
+    <img src="{% static 'img/frame4.png' %}" class="frame4" alt="frame4">
 
-    <script src="{% static 'main/static/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>
