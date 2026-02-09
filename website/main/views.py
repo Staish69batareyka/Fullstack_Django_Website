@@ -9,3 +9,4 @@ def popular_list(request):
 def product_detail(request, slug):
     product = get_object_or_404(Product, slug=slug, available=True)
     return render(request, 'main/product/detail.html', {"product": product})
+

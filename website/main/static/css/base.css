@@ -205,3 +205,16 @@ h4 {
     text-decoration: line-through;
     font-weight: 300;
 }
+
+.cart-btn{
+    width: 180px;
+    height: 50px;
+    border: 1px solid #00000027;
+    border-radius: 5px;
+    background: #fff;
+    margin-top: 20px;
+}
+.cart-btn:hover{
+    cursor: pointer;
+    border: 1px solid #000;
+}
