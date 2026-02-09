@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
 
+:root{
+    --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.363);
+
+}
+
+
 body {
     font-family: 'Carrois Gothic', sans-serif;
     font-size: 18px;
@@ -53,3 +59,31 @@ h4 {
     margin: 0 auto;
 }
 
+.header{
+    height: 80px;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+ }
+
+.header-list{
+    text-transform: uppercase;
+}
+
+.heavy-logo{
+    position: fixed;
+    top: 0.5%;
+    left: 44.5%;
+}
+
+.home {
+    align-items: center;
+}
+
+.home-title {
+    margin-top: 210px;
+    margin-bottom: 50px;
+}
+
+.home-card{
+    width: 200px
+}

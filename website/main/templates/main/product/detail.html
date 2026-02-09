@@ -4,7 +4,7 @@
 {% block title %}{{ product.name }}{% endblock title %}
 
 {% block content %}
-    <div class="detail-product">
+    <div class="detail-product d-flex">
         <div class="detail-img">
             <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/noimage.jpg' %}{% endif %}"
                  alt="product-image">
@@ -15,14 +15,14 @@
                 <p>Description: {{product.description}}</p>
 
                 {% if product.discount%}
-                    <div class="card-discount">
+                    <div class="card-discount d-flex gap-2">
                         <p class="line">{{ product.price }}</p>
                         <p>{{ product.sell_price }}</p>
                     </div>
                 {% else %}
                     <p class="line">{{ product.price }}</p>
                 {% endif %}
-                <a href="#" class="cart-btn">Add to cart</a>
+                <a href="#" class="cart-btn d-flex align-items-center justify-content-center">Add to cart</a>
             </div>
     </div>
 {% endblock content %}
