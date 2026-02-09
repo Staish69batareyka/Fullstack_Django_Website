@@ -10,6 +10,22 @@
     <link rel="stylesheet" href="{% static 'main/static/css/base.css' %}">
 </head>
 <body>
+    <header class="header sticky-top">
+        <div class="header-container d-flex">
+            <navbar class="header-nav pt-4">
+                <ul class="header-list d-flex">
+                    <li><a href="/" class="nav-a m-3">Home</a></li>
+                    <li><a href="#" class="nav-a m-3">Shop</a></li>
+                    <li><a href="/" class="nav-a m-3">Some</a></li>
+                </ul>
+            </navbar>
+            <div class="header-logo">
+                <a href="/"><img src="{% static 'img' %}" alt="logo"></a>
+            </div>
+        </div>
+    </header>
+
+
     {% block content %}
     {% endblock content %}
 
