@@ -85,5 +85,123 @@ h4 {
 }
 
 .home-card{
-    width: 200px
+    width: 200px;
+    height: 325px;
+    border: 1px solid #00000027;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    background: #fff;
+}
+
+.home-card:hover{
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.title-card{
+    max-width: 185px;
+    margin-top: 20px;
+    min-height: 70px;
+}
+
+.card-img{
+    width: 195px;
+    height: 195px;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+.home-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #00000027;
+    border-radius: 5px;
+    background-image: url('../img/btnh.png');
+    transition: all 0.4s ease;
+    z-index: 2;
+}
+
+.home-btn:hover{
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.frame1{
+    position: absolute;
+    right: -0.5%;
+    bottom: 60%;
+    z-index: -1;
+}
+.frame2{
+    position: absolute;
+    left: -0.5%;
+    bottom: 60%;
+    z-index: -1;
+}
+.frame3{
+    position: absolute;
+    left: -0.4%;
+    top: 73.4%;
+    z-index: -1;
+}
+.frame4{
+    position: absolute;
+    right: -0.4%;
+    top: 73.4%;
+    z-index: -1;
+}
+
+.logogothic{
+    position: absolute;
+    top: 6%;
+    left: 40%;
+    width: 400px;
+    height: 300px;
+    z-index: -1;
+}
+
+.subtitlee{
+    position: absolute;
+    bottom: 0;
+    left: 44.5%;
+    z-index: -1;
+}
+
+.detail-img{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.detail-description{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.detail-description p{
+    margin-top: 30px;
+    max-width: 700px;
+}
+.detail-description h2 span{
+    font-size: 56px;
+}
+
+.card-discount{
+    margin-top: -10px;
+    font-weight: 600;
+}
+
+.card-discount .price{
+    margin-top: -1px;
+}
+.line{
+    opacity: 0.7;
+    text-decoration: line-through;
+    font-weight: 300;
 }

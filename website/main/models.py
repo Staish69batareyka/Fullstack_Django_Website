@@ -38,17 +38,14 @@ class Product(models.Model):
             models.Index(fields=['created'])
         ]
 
-        def __str__(self):
-            return self.name
-
-        def get_absolute_url(self):
-            return reverse('main:product_detail',
-                           args=[self.slug])
-
-
-        def sell_prise(self):
-            if self.discount:
-                return round(self.price - self.price * self.discount / 100 , 2)
-            return self.price
+    def __str__(self):
+        return self.name
+    def get_absolute_url(self):
+        return reverse('main:product_detail',
+                       args=[self.slug])
+    def sell_price(self):
+        if self.discount:
+            return round(self.price - self.price * self.discount / 100 , 2)
+        return self.price
 
 
