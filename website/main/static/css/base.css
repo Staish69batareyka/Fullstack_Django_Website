@@ -242,6 +242,14 @@ h4 {
     margin: 0 auto;
 }
 
+.item {
+    border: 1px solid #00000027;
+    border-radius: 5px;
+}
+.item:hover {
+    border: 1px solid #000;
+}
+
 .sidebar {
     margin-top: 70px;
 }
