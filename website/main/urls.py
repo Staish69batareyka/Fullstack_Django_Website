@@ -8,8 +8,15 @@ urlpatterns = [
          views.popular_list,
          name='popular_list'),
 
-    path('<slug:slug>/',
+    path('shop/',
+         views.product_list,
+         name='product_list'),
+
+    path('shop/category/<slug:category_slug>', views.product_list, name='product_list_by_category'),
+
+    path('shop/<slug:slug>/',
          views.product_detail,
-         name='product_detail')
+         name='product_detail'),
+
 
 ]
